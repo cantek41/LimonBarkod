@@ -47,10 +47,10 @@ public class ListAdapter extends ArrayAdapter<Map<String, Object>> {
 
         LinearLayout rowLayout = new LinearLayout(mContext);
         LinearLayout.LayoutParams params =
-                new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                         LinearLayout.LayoutParams.WRAP_CONTENT);
         rowLayout.setLayoutParams(params);
-        rowLayout.setOrientation(LinearLayout.VERTICAL); //dikey
+        rowLayout.setOrientation(LinearLayout.HORIZONTAL); //dikey
 //      rowLayout.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.rowTransparan));
 
 
@@ -60,7 +60,7 @@ public class ListAdapter extends ArrayAdapter<Map<String, Object>> {
 
                 TextView label = new TextView(mContext);
                 label.setTextSize(12);
-                SpannableString spanString = new SpannableString(item.getKey() + ": ");
+                SpannableString spanString = new SpannableString(item.getKey() + " ");
                 spanString.setSpan(new StyleSpan(Typeface.BOLD), 0, spanString.length(), 0);
                 label.setText(spanString);
 
@@ -69,8 +69,9 @@ public class ListAdapter extends ArrayAdapter<Map<String, Object>> {
                 value.setText(item.getValue() + "");
 
                 LinearLayout r = new LinearLayout(mContext);
+                params.leftMargin=10;
                 r.setLayoutParams(params);
-                r.setOrientation(LinearLayout.HORIZONTAL); //dikey
+                r.setOrientation(LinearLayout.VERTICAL); //dikey
 
                 r.addView(label);
                 r.addView(value);
