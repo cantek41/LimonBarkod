@@ -1,4 +1,6 @@
 # LimonBarkod
 Wep apiden gelen dinamik dataları tablolar halinde gösterir
-![Dikey](https://github.com/cantek41/LimonBarkod/blob/master/image/1.jpeg)
-![Yatay](https://github.com/cantek41/LimonBarkod/blob/master/image/2.jpeg)
+<p align="center">
+  <img src="https://github.com/cantek41/LimonBarkod/blob/master/image/1.jpeg" width="350"/>
+  <img src="https://github.com/cantek41/LimonBarkod/blob/master/image/2.jpeg" width="350"/>
+</p>
