@@ -22,6 +22,7 @@ public class MyPreference {
     public static MyPreference preference;
     public static String mainURL;
     public static SharedPreferences data;
+    public static String defaultURL="http://213.74.223.90:1560";
 
     private MyPreference(Context context) {
         this.context = context;
@@ -32,7 +33,7 @@ public class MyPreference {
             preference = new MyPreference(context);
         if (data == null)
             data = PreferenceManager.getDefaultSharedPreferences(context);
-        mainURL = data.getString("mainURL", "http://demo.veribiscrm.com/");
+        mainURL = data.getString("mainURL", defaultURL);
         return preference;
     }
 

@@ -1,9 +1,11 @@
 package com.limon.barkod.limonbarkod;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.v7.app.AppCompatActivity;
 
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -56,7 +58,6 @@ public abstract class BaseActivity extends AppCompatActivity {
             mProgressDialog = null;
         }
     }
-
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
